@@ -1,5 +1,4 @@
 testMail==2.0
-tensorflow==2.0
 numpy==1.16.5
 pandas==0.25.3
 seaborn==0.9.0
@@ -7,3 +6,4 @@ scikit-learn==0.21.3
 mlxtend==0.17.0
 matplotlib==3.1.1
 lightgbm==2.3.0
+tensorflow==2.0
