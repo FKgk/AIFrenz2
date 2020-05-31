@@ -6,56 +6,55 @@
 - private score: 2.44881 (89위)
 
 
-
-
-
-
 ---
+---
+
+
 # Experiment
 
-# Ridge(alpha=10.0) dl_train.npy shpae (1600 * 15, 1)
+## Ridge(alpha=10.0) dl_train.npy shpae (1600 * 15, 1)
 - fscore : 0.17027079680498733 	 maeOverFscore : 10.658128098636725
 
 
 
-# Ridge alpha 12.5 SelectK 8
+## Ridge alpha 12.5 SelectK 8
 - fscore : 0.25464065823329085 	 maeOverFscore : 6.752701127612951
 - fscore : 0.25458534451407944 	 maeOverFscore : 6.7528914220204515
 - fscore : 0.2545837754161434 	 maeOverFscore : 6.702930965930638
 - fscore : 0.25427823328070515 	 maeOverFscore : 6.747219104960767
 
-# Ridge alpha 10.0 SelectK 8
+## Ridge alpha 10.0 SelectK 8
 - fscore : 0.25464065823329085 	 maeOverFscore : 6.752701129278926
 - fscore : 0.25458534451407944 	 maeOverFscore : 6.75289142477857
 - fscore : 0.2545837754161434 	 maeOverFscore : 6.70293096792134
 - fscore : 0.25427826739578746 	 maeOverFscore : 6.747218201741558
 
-# Ridge alpha 10.0 SelectK 8 StandardScaler
+## Ridge alpha 10.0 SelectK 8 StandardScaler
 - fscore : 0.2546402018844707 	 maeOverFscore : 6.752709268799811
 - fscore : 0.2545845515075978 	 maeOverFscore : 6.752907726649149
 - fscore : 0.2545843704403055 	 maeOverFscore : 6.702911044140701
 - fscore : 0.25427924623684933 	 maeOverFscore : 6.7471879931893675
 
-# Ridge alpha 10.0 SelectK 8 RobustScaler
+## Ridge alpha 10.0 SelectK 8 RobustScaler
 - fscore : 0.2749365314732829 	 maeOverFscore : 6.261598197378067
 - fscore : 0.2752106860272466 	 maeOverFscore : 6.2545566924636615
 - fscore : 0.27483218889350364 	 maeOverFscore : 6.215133163802377
 - fscore : 0.2744506712189898 	 maeOverFscore : 6.258121761417609
 
-# Ridge alpha 10.0 SelectK 8 PCA 2 dim
+## Ridge alpha 10.0 SelectK 8 PCA 2 dim
 - fscore : 0.24107474262012732 	 maeOverFscore : 8.224389019645066
 - fscore : 0.2410970325797045 	 maeOverFscore : 8.222939301354975
 - fscore : 0.24133791359125045 	 maeOverFscore : 8.159670908854318
 - fscore : 0.2408981513939592 	 maeOverFscore : 8.21528441818803
 
-# Ridge alpha 10.0 SelectK 8 PCA 1 dim
+## Ridge alpha 10.0 SelectK 8 PCA 1 dim
 - 0.16343634206703112 12.186417405981281
 - 0.16353559251460106 12.177879886692459
 - 0.16345101377437446 12.102961373810988
 - 0.16322487488861562 12.179870422653915
 
 
-# Lightbgm  
+## Lightbgm  
 clf = lgb.LGBMRegressor(boosting_type='gbdt', num_leaves=31, \
 						max_depth=- 1, learning_rate=0.01, \
                         n_estimators=400, subsample_for_bin=200000, objective=None, class_weight=None, \
@@ -96,25 +95,25 @@ Did not meet early stopping. Best iteration is:
 fscore        : 0.6242383296335617
 maeOverFscore : 1.7076647742636357
 
-## train vs val (~112000000, 112000000~)
+### train vs val (~112000000, 112000000~)
 [400]	valid_0's l2: 1.72269
 fscore        : 0.6392624073411757	
 maeOverFscore : 1.7811428259684727
 
-## 2000, 28
+### 2000, 28
 Did not meet early stopping. Best iteration is:
 [2000]  valid_0's l2: 2.39741
 fscore        : 0.6335426349159089
 maeOverFscore : 1.6396066001397651
 
 
-# dart
+## dart
 [600]   valid_0's l2: 2.58721
 fscore        : 0.6066729223041292      
 maeOverFscore : 1.965713243941674
 
 
-# Catboost 500 0.01 4 20 Bernoulli MAE
+## Catboost 500 0.01 4 20 Bernoulli MAE
 bestTest = 0.1255453984
 bestIteration = 499
 
