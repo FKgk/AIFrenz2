@@ -95,7 +95,7 @@ Did not meet early stopping. Best iteration is:
 fscore        : 0.6242383296335617
 maeOverFscore : 1.7076647742636357
 
-### train vs val (~112000000, 112000000~)
+### train vs val (:112000000, 112000000:)
 [400]	valid_0's l2: 1.72269
 fscore        : 0.6392624073411757	
 maeOverFscore : 1.7811428259684727
